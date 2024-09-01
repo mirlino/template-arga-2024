@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-
   @font-face {
     font-family: 'Purista';
     font-style: normal;
@@ -30,5 +29,4 @@
     font-style: normal;
     src: url(../assets/font/WebSymbols-Regular.otf);
   }
-
 }

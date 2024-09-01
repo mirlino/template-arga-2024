@@ -1,8 +1,17 @@
 <script setup lang="ts">
+  import TheSlide from '@/components/slide/TheSlide.vue';
 </script>
 
 <template>
   <div>
-    <h1>hola</h1>
+    <section>
+        <the-slide />
+    </section>
+    <section>
+        
+    </section>
   </div>
 </template>
+<style>
+
+</style>

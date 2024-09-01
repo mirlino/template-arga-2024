@@ -5,15 +5,15 @@
 
 <template>
   <div>
-    <header-component />
-    
-    <router-view v-slot="{ Component, route }">
-      <transition name="fade" mode="out-in">
-        <component :is="Component" :key="route.path" />
-      </transition>
-    </router-view>
-
-    <footer-component />
+    <header-component class="z-20" />
+    <div class="z-10">
+      <router-view v-slot="{ Component, route }">
+        <transition name="fade" mode="out-in">
+          <component :is="Component" :key="route.path" />
+        </transition>
+      </router-view>
+    </div>
+    <footer-component class="z-20" />
   </div>
 </template>
 <style lang="css" scoped>
