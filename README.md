@@ -1,18 +1,23 @@
-# arga_2024
+# Actalización de Plantilla web ArgA Ver 2024 with Vue 3
 
-This template should help get you started developing with Vue 3 in Vite.
+![template](https://img.shields.io/badge/Status-Woking-red.svg)
+![Static Badge](https://img.shields.io/badge/framework-vue%203-green)
+![Static Badge](https://img.shields.io/badge/framework%20css-tailwind%20css-blue)
 
-## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Type Support for `.vue` Imports in TS
+## Descripción:
+Mejora de plantilla ArgA utilizando el framework de Vue 3, con mejor estructuración en comparación a sus predecesores del 2018, 2019 y 2020. Corrigiendo errores de rendimiento y formato obsoleto.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## Tecnologías Actuales
 
-## Customize configuration
+**La plantilla esta siendo desarrollada hasta el momento con las siguientes Librerías:**
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+* [`Vue 3`](https://vuejs.org/ "Framework")
+* [`Tailwind CSS`](https://tailwindcss.com/ "Framework CSS")
+* [`Swiper`](https://swiperjs.com/ "Library")
+
 
 ## Project Setup
 
