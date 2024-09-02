@@ -9,7 +9,7 @@
         </div>
       </div>
       <div class="w-[20rem]">
-        <img class="w-[8rem] mb-6" src="/assets/img/logo.png" alt="ArgA">
+        <img class="w-[8rem] mb-6" src="/src/assets/img/logo.png" alt="ArgA">
         <p class="text-white text-xl font-light mb-6 pr-2">Clan Dedicado a la simulación militar en primera persona contra la IA, no se realizan actividades relacionadas con PVP o TVT.</p>
         <div class="font-websymbols flex flex-row gap-4">
           <a class="text-amarillo-arga-400 text-3xl hover:text-amarillo-arga-600 transition-colors" href="#">f</a>
