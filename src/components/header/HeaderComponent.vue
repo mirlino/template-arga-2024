@@ -2,7 +2,7 @@
   <header class="w-full h-16 flex justify-between items-center px-16 bg-azul-arga-600">
     <div>
       <router-link :to="{path: '/'}">
-        <img class="w-[6rem]" src="../../assets/img/logo.png" alt="ArgA">
+        <img class="w-[6rem]" src="/assets/img/logo.png" alt="ArgA">
       </router-link>
     </div>
     <nav class="flex flex-row font-purista">
