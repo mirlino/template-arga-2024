@@ -226,7 +226,7 @@
     <!--Eventos-->
     <section 
       class="w-full bg-fixed flex flex-col justify-center items-center py-10" 
-      style="background-image: url('../src/assets/img/bg.jpg');"
+      style="background-image: url('src/assets/img/bg.jpg');"
     >
       <event-component 
         title="Eventos Mas recientes"
@@ -252,7 +252,7 @@
     <!--Condecoraciones-->
     <section
       class="w-full bg-fixed flex flex-col justify-center items-center py-10" 
-      style="background-image: url('../src/assets/img/bg.jpg');"
+      style="background-image: url('src/assets/img/bg.jpg');"
     >
       <award-component
       title="Condecoraciones"
