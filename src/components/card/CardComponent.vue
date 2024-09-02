@@ -1,30 +1,13 @@
 <script lang="ts" setup>
-  const cards = [
-    {
-      title: "Nuestros Entrenamientos",
-      paragraph: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam non quae adipisci? Harum cupiditate id nihil iusto exercitationem, nulla fugit et soluta? Totam cumque ut optio consectetur dignissimos sed at natus soluta. Sint illum autem, totam assumenda labore pariatur velit vero neque qui eum aliquam. Veniam possimus placeat unde libero!",
-      img: 'reclutamiento.jpg',
-      link: '',
-    },
-    {
-      title: "Misiones Oficiales",
-      paragraph: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam non quae adipisci? Harum cupiditate id nihil iusto exercitationem, nulla fugit et soluta? Totam cumque ut optio consectetur dignissimos sed at natus soluta. Sint illum autem, totam assumenda labore pariatur velit vero neque qui eum aliquam. Veniam possimus placeat unde libero!",
-      img: 'fondoTres.png',
-      link: '',
-    },
-    {
-      title: "Eventos Semanales",
-      paragraph: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam non quae adipisci? Harum cupiditate id nihil iusto exercitationem, nulla fugit et soluta? Totam cumque ut optio consectetur dignissimos sed at natus soluta. Sint illum autem, totam assumenda labore pariatur velit vero neque qui eum aliquam. Veniam possimus placeat unde libero!",
-      img: 'historyOne.png',
-      link: '',
-    }
-  ];
+  import type { Card } from '@/interfaces/Cards.interface';
+  
+  const props = defineProps<Card>();
 </script>
 
 
 <template>
   <div class="flex flex-row flex-wrap justify-center gap-8"> 
-    <div class="w-[25rem] flex flex-col justify-center pb-8 bg-white hover:-translate-y-4 transition-transform" v-for="(card, index) in cards" :key="index">
+    <div class="w-[25rem] flex flex-col justify-center pb-8 bg-white hover:-translate-y-4 transition-transform" v-for="(card, index) in props.cards" :key="index">
       <img class="w-[25rem] h-[15rem]" :src="`src/assets/img/${card.img}`" :alt="`${card.title}`">
       <div class="flex flex-col justify-center items-center p-4">
         <h3 class="text-black uppercase text-2xl font-bold text-center py-4">{{ card.title }}</h3>
