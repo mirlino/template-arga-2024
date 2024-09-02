@@ -9,13 +9,13 @@
     {
       title: "Misiones Oficiales",
       paragraph: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam non quae adipisci? Harum cupiditate id nihil iusto exercitationem, nulla fugit et soluta? Totam cumque ut optio consectetur dignissimos sed at natus soluta. Sint illum autem, totam assumenda labore pariatur velit vero neque qui eum aliquam. Veniam possimus placeat unde libero!",
-      img: 'historyOne.png',
+      img: 'fondoTres.png',
       link: '',
     },
     {
       title: "Eventos Semanales",
       paragraph: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam non quae adipisci? Harum cupiditate id nihil iusto exercitationem, nulla fugit et soluta? Totam cumque ut optio consectetur dignissimos sed at natus soluta. Sint illum autem, totam assumenda labore pariatur velit vero neque qui eum aliquam. Veniam possimus placeat unde libero!",
-      img: 'reclutamiento.jpg',
+      img: 'historyOne.png',
       link: '',
     }
   ];

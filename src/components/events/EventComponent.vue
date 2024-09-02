@@ -1,44 +1,11 @@
 <script lang="ts" setup>
-  interface Article {
-    title?:     string;
-    subTile?:   string;
-    hasLogo:    boolean;
-    information?:  string[];
-  }
+  import type { Article } from '@/interfaces/events.interface';
   
   const props = withDefaults(defineProps<Article>(), {
     title: 'Eventos Mas recientes',
     subTitle: 'Últimos eventos agregados',
-    hasLogo: true,    
+    hasLogo: true,
   });
-
-  const recentEvents = [
-    {
-      date: '13 septiembre 2024',
-      title: 'Neptuno',
-      category: 'Misión',
-      logo: 'badge-logo.png',
-      img: 'historyOne.png',
-      link: '#',
-    },
-    {
-      date: '13 septiembre 2024',
-      title: 'Asalto a la Catedral',
-      category: 'Misión',
-      logo: 'badge-logo.png',
-      img: 'historyOne.png',
-      link: '#',
-    },
-    {
-      date: '13 septiembre 2024',
-      title: 'Mercedez',
-      category: 'Misión',
-      logo: 'badge-logo.png',
-      img: 'historyOne.png',
-      link: '#',
-    }
-  ];
-  
 </script>
 
 <template>
@@ -49,7 +16,7 @@
     </div>
     <!--:style="'background-image:url('+`../src/assets/img/${event.img}`+');'"-->
     <div class="flex flex-row flex-wrap gap-4 items-center justify-center">
-      <div class="relative w-[30rem] hover:-translate-y-2 transition-transform"  v-for="(event, index) in recentEvents" :key="index">
+      <div class="relative w-[30rem] hover:-translate-y-2 transition-transform"  v-for="(event, index) in props.information" :key="index">
         <img class="bg-cover brightness-50 z-10" :src="`src/assets/img/${event.img}`" :alt="`${event.title}`">
         <span class="absolute uppercase top-0 left-0 bg-azul-arga-600 py-4 px-6 z-20">{{ event.date }}</span>
         <div class="absolute flex flex-row justify-center items-center gap-8 top-[25%] px-4 left-[10%]">
@@ -60,12 +27,12 @@
             <span class="font-bold text-lg uppercase text-amarillo-arga-300">{{ event.category }}</span>
             <h2 class="text-4xl font-bold uppercase">{{ event.title.length > 15 ? `${event.title.slice(1,15)}...` : event.title }}</h2>
             <p 
-              v-if="!props.hasLogo && props.information"
+              v-if="!props.hasLogo && event.paragraph"
               class="text-white text-base font-thin"
-            >{{ props.information[0].length > 100 ? `${props.information[0].slice(1,100)}...` : props.information[0]}}</p>
+            >{{ event.paragraph.length > 100 ? `${event.paragraph.slice(1,100)}...` : event.paragraph}}</p>
           </div>
         </div>
-        <a class="absolute bottom-0 right-0 font-thin text-md px-6 py-4 bg-azul-arga-600 hover:px-8 hover:py-6 transition-all" href="">Saber más...</a>
+        <router-link class="absolute bottom-0 right-0 font-thin text-md px-6 py-4 bg-azul-arga-600 hover:px-8 hover:py-6 transition-all" :to="{name: ''}">Saber más...</router-link>
       </div>
     </div>
   </div>

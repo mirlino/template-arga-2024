@@ -5,7 +5,7 @@
         <h3 class="text-amarillo-arga-500 text-2xl font-medium mb-2">Contactanos</h3>
         <p class="text-white font-light mb-4 pr-8">Puedes Acceder a nuestro Foro para tener más detalles...</p>
         <div class="py-2">
-          <a class="text-white py-2 px-2 ring-2 ring-amarillo-arga-500 hover:bg-amarillo-arga-500 hover:ring-transparent transition-colors" href="#">Saber más...</a>
+          <a class="text-white py-4 px-6 ring-2 ring-amarillo-arga-500 hover:bg-amarillo-arga-500 hover:ring-transparent transition-colors" href="#">Saber más...</a>
         </div>
       </div>
       <div class="w-[20rem]">
