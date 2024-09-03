@@ -1,8 +1,11 @@
 <script lang="ts" setup>
-  import {ref} from 'vue';
   import type { Ally } from '@/interfaces/alliances.interface';
   const props = defineProps<Ally>();
-    const URL = ref('src/assets/img/friends/');
+    
+  
+  function getImageUrl(name:any) {
+    return new URL(`../../assets/img/friends/${name}.png`, import.meta.url).href
+  }
 </script>
 
 <template>
@@ -13,7 +16,7 @@
       </div>
       <div class="w-[80%] mx-auto flex flex-row flex-wrap justify-center items-center gap-6">
         <a class="saturate-0 hover:saturate-100 opacity-30 hover:opacity-100 transition-all hover:-translate-y-1" v-for="(ally, index) in props.alliances" :key="index" :href="`${ally.link}`">
-          <img class="w-[8rem]" :src="URL+ally.img" :alt="`${ally.description}`">
+          <img class="w-[8rem]" :src="getImageUrl(ally.img)" :alt="`${ally.description}`">
         </a>
       </div>
   </div>  

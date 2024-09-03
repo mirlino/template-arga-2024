@@ -17,6 +17,14 @@
     console.log('slide change');
   };
 
+  // function getImageUrl(name: any) {
+  //   return new URL(`${name}`, import.meta.url).href;
+  // }
+
+  function getImageUrl(name:any) {
+    return new URL(`../../assets/img/slide/${name}.png`, import.meta.url).href
+  }
+
 </script>
 
 <template>
@@ -36,7 +44,7 @@
           :allow-slide-next="true"
         >
           <swiper-slide v-for="(foto, index) in props.slides" :key="index">
-            <img class="relative brightness-50" :src="'src/assets/img/slide/'+foto.img" alt="">
+            <img class="relative brightness-50" :src="getImageUrl(foto.img)" alt="">
             <div class="font-purista w-1/2 absolute flex flex-col gap-4 px-4 py-4 top-1/3 left-28 backdrop-blur-md rounded-lg">
               <h2 class="font-bold text-5xl text-white">{{ foto.titulo.length > 30 ? `${foto.titulo.slice(0,30)}...` : foto.titulo }}</h2>
               <p class="text-white text-xl font-light">{{ foto.description.length > 200 ? `${foto.description.slice(0,200)}...` : foto.description }}</p>

@@ -11,6 +11,9 @@
     link,
   } = toRefs(props.resume);
 
+  function getImageUrl(name:any) {
+    return new URL(`../../assets/img/${name}.png`, import.meta.url).href
+  }
 </script>
 
 <template>
@@ -18,7 +21,7 @@
     <div 
       class="flex flex-row flex-wrap justify-center items-center gap-8 font-purista" 
     >
-      <img class="w-[15rem] text-white" :src="'src/assets/img/'+img" :alt="`${title}`">
+      <img class="w-[15rem] text-white" :src="getImageUrl(img)" :alt="`${title}`">
       <article class="w-1/2 text-wrap text-white">
         <h2 class="text-9xl font-bold uppercase tracking-[-0.98rem]">{{ title }}</h2>
         <h3 class="text-4xl pt-2 pb-6" >{{ slogan }}</h3>

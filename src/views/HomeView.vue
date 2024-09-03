@@ -7,20 +7,15 @@
   import AlliancesComponent from '@/components/alliances/AlliancesComponent.vue';
 
   const fotos = [
+    
     {
-      img: 'fondo.jpeg',
-      titulo: 'Titulo extendido para prueba 01',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos harum odit, dolorem vitae nobis aperiam repellat temporibus nulla cum ullam minus pariatur repudiandae excepturi sequi nemo quo saepe natus quis earum at? Officia nisi blanditiis ipsa similique earum, harum unde magni recusandae ea officiis? Reiciendis officiis quo quaerat ad qui.',
-      link: '#',
-    },
-    {
-      img: 'fondoDos.png',
+      img: 'fondoDos',
       titulo: 'Titulo 2',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos harum odit, dolorem vitae nobis aperiam repellat temporibus nulla cum ullam minus pariatur repudiandae excepturi sequi nemo quo saepe natus quis earum at? Officia nisi blanditiis ipsa similique earum, harum unde magni recusandae ea officiis? Reiciendis officiis quo quaerat ad qui.',
       link: '#',
     },
     {
-      img: 'fondoTres.png',
+      img: 'fondoTres',
       titulo: 'Titulo 3',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos harum odit, dolorem vitae nobis aperiam repellat temporibus nulla cum ullam minus pariatur repudiandae excepturi sequi nemo quo saepe natus quis earum at? Officia nisi blanditiis ipsa similique earum, harum unde magni recusandae ea officiis? Reiciendis officiis quo quaerat ad qui.',
       link: '#',
@@ -32,19 +27,19 @@
   {
     title: "Nuestros Entrenamientos",
     paragraph: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam non quae adipisci? Harum cupiditate id nihil iusto exercitationem, nulla fugit et soluta? Totam cumque ut optio consectetur dignissimos sed at natus soluta. Sint illum autem, totam assumenda labore pariatur velit vero neque qui eum aliquam. Veniam possimus placeat unde libero!",
-    img: 'reclutamiento.jpg',
+    img: 'reclutamiento',
     link: '',
   },
   {
     title: "Misiones Oficiales",
     paragraph: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam non quae adipisci? Harum cupiditate id nihil iusto exercitationem, nulla fugit et soluta? Totam cumque ut optio consectetur dignissimos sed at natus soluta. Sint illum autem, totam assumenda labore pariatur velit vero neque qui eum aliquam. Veniam possimus placeat unde libero!",
-    img: 'fondoTres.png',
+    img: 'fondoTres',
     link: '',
   },
   {
     title: "Eventos Semanales",
     paragraph: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam non quae adipisci? Harum cupiditate id nihil iusto exercitationem, nulla fugit et soluta? Totam cumque ut optio consectetur dignissimos sed at natus soluta. Sint illum autem, totam assumenda labore pariatur velit vero neque qui eum aliquam. Veniam possimus placeat unde libero!",
-    img: 'historyOne.png',
+    img: 'historyOne',
     link: '',
   }
   ];
@@ -53,7 +48,7 @@
     title: "Clan Arga",
     slogan: "Únete a nuestra comunidad",
     paragraph: `Clan ArgA sitúa su origen a finales de Octubre del año 2011. <br><br>Sus tres miembros fundadores: ZePp, Reo y Kosteleta comenzaron a interactuar y efectuar publicaciones en foros y sitios de encuentro de jugadores con la intención de crear una comunidad que jugara de una forma mas ordenada y seria.`,
-    img: 'badge-logo.png',
+    img: 'badge-logo',
     link: '/',
   };
 
@@ -62,24 +57,24 @@
       date: '13 septiembre 2024',
       category: 'Misión',
       title: 'Neptuno',
-      logo: 'badge-logo.png',
-      img: 'historyOne.png',
+      logo: 'badge-logo',
+      img: 'historyOne',
       link: '#',
     },
     {
       date: '13 septiembre 2024',
       category: 'Misión',
       title: 'Asalto a la Catedral',
-      logo: 'badge-logo.png',
-      img: 'historyOne.png',
+      logo: 'badge-logo',
+      img: 'historyOne',
       link: '#',
     },
     {
       date: '13 septiembre 2024',
       category: 'Misión',
       title: 'Mercedez',
-      logo: 'badge-logo.png',
-      img: 'historyOne.png',
+      logo: 'badge-logo',
+      img: 'historyOne',
       link: '#',
     }
   ];
@@ -88,28 +83,28 @@
     {
       date: '13 septiembre 2024',
       category: 'Blog',
-      title: 'Mercedez',
+      title: 'Nuevos Aliados',
       paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptas sed, incidunt quidem et iusto eveniet est beatae neque molestias quo earum alias accusantium laudantium maiores aliquam cupiditate saepe rem consequatur provident! Tenetur nihil quaerat quo impedit dicta, quidem ex iusto, reprehenderit rerum autem at libero odio ratione consequatur nulla?',
-      logo: 'badge-logo.png',
-      img: 'fondoTres.png',
+      logo: 'badge-logo',
+      img: 'fondoTres',
       link: '#',
     },
     {
       date: '13 septiembre 2024',
       category: 'Blog',
-      title: 'Mercedez',
+      title: 'Reunión de Clanes',
       paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptas sed, incidunt quidem et iusto eveniet est beatae neque molestias quo earum alias accusantium laudantium maiores aliquam cupiditate saepe rem consequatur provident! Tenetur nihil quaerat quo impedit dicta, quidem ex iusto, reprehenderit rerum autem at libero odio ratione consequatur nulla?',
-      logo: 'badge-logo.png',
-      img: 'fondoTres.png',
+      logo: 'badge-logo',
+      img: 'fondoTres',
       link: '#',
     },
     {
       date: '13 septiembre 2024',
       category: 'Blog',
-      title: 'Mercedez',
+      title: 'Misiones Entrantes',
       paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptas sed, incidunt quidem et iusto eveniet est beatae neque molestias quo earum alias accusantium laudantium maiores aliquam cupiditate saepe rem consequatur provident! Tenetur nihil quaerat quo impedit dicta, quidem ex iusto, reprehenderit rerum autem at libero odio ratione consequatur nulla?',
-      logo: 'badge-logo.png',
-      img: 'fondoTres.png',
+      logo: 'badge-logo',
+      img: 'fondoTres',
       link: '#',
     },
   ];
@@ -118,84 +113,84 @@
     {
       player: 'BlackBurn',
       description: 'Por haber demostrado experiencia de mando hacia con la misión en la que tuvo que manejar su propio equipo de combate.',
-      img: '26_zps1c7d5ccc.png',
-      background: 'fondo.jpeg',
+      img: '26_zps1c7d5ccc',
+      background: 'fondo',
       link: '/',
     },
     {
       player: 'BlackBurn',
       description: 'Por haber demostrado experiencia en combate y haber sobrevivido a la feroz amenaza enemiga.',
-      img: '16_zpsf2ca749b.png',
-      background: 'fondo.jpeg',
+      img: '16_zpsf2ca749b',
+      background: 'fondo',
       link: '/',
     },
     {
       player: 'BlackBurn',
       description: 'Por haber demostrado experiencia en manejar la situación cuando era necesario, tomando control de cada orden recibida.',
-      img: '07_zps96ce2b44.png',
-      background: 'fondo.jpeg',
+      img: '07_zps96ce2b44',
+      background: 'fondo',
       link: '/',
     },
   ];
 
   const alliances = [
     {
-      img: 'BR4.png',
+      img: 'BR4',
       description: '',
       link: '#',
     },
     {
-      img: 'CE.png',
+      img: 'CE',
       description: '',
       link: '#',
     },
     {
-      img: 'CR.png',
+      img: 'CR',
       description: '',
       link: '#',
     },
     {
-      img: 'CTU.png',
+      img: 'CTU',
       description: '',
       link: '#',
     },
     {
-      img: 'A2.png',
+      img: 'A2',
       description: '',
       link: '#',
     },
     {
-      img: 'BAS.png',
+      img: 'BAS',
       description: '',
       link: '#',
     },
     {
-      img: 'CS.png',
+      img: 'CS',
       description: '',
       link: '#',
     },
     {
-      img: 'CMPC.png',
+      img: 'CMPC',
       description: '',
       link: '#',
     },
     {
-      img: 'DH.png',
+      img: 'DH',
       description: '',
       link: '#',
     },
     {
-      img: 'SFS.png',
+      img: 'SFS',
       description: '',
       link: '#',
     },
     {
-      img: 'EGV.png',
+      img: 'EGV',
       description: '',
       link: '#',
     },
     {
-      img: 'ZR.png',
+      img: 'ZR',
       description: '',
       link: '#',
     },
@@ -225,8 +220,8 @@
    
     <!--Eventos-->
     <section 
-      class="w-full bg-fixed flex flex-col justify-center items-center py-10" 
-      style="background-image: url('src/assets/img/bg.jpg');"
+      class="w-full bg-fixed flex flex-col justify-center items-center py-10 background-arma" 
+    
     >
       <event-component 
         title="Eventos Mas recientes"
@@ -251,8 +246,8 @@
     
     <!--Condecoraciones-->
     <section
-      class="w-full bg-fixed flex flex-col justify-center items-center py-10" 
-      style="background-image: url('src/assets/img/bg.jpg');"
+      class="w-full bg-fixed flex flex-col justify-center items-center py-10 background-arma" 
+      
     >
       <award-component
       title="Condecoraciones"
@@ -273,3 +268,8 @@
     <section class="py-10 font-purista bg-[#181818]"></section>
   </div>
 </template>
+<style>
+  .background-arma {
+    background-image: url('../assets/img/bg.jpg');
+  }
+</style>

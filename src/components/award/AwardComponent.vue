@@ -2,7 +2,12 @@
   import type { Award } from '@/interfaces/award.interface';
   
   const props = defineProps<Award>();
+  
+  function getImageUrl(name: string, ext: string = 'png') {
+    if(ext === 'png') return new URL(`../../assets/img/path/${name}.png`, import.meta.url).href;
+    if(ext === 'jpeg') return new URL(`../../assets/img/${name}.jpeg`, import.meta.url).href;
 
+  }
 </script>
 
 <template>
@@ -17,8 +22,8 @@
         v-for="(award, index) in props.duty" :key="index"
       >
         <div class="">
-          <img class="w-[10rem] absolute top-[20%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20" :src="'src/assets/img/path/'+award.img" alt="patch">
-          <img class="bg-cover brightness-[.3] z-10" :src="'src/assets/img/'+award.background" alt="patch">
+          <img class="w-[10rem] absolute top-[20%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20" :src="getImageUrl(award.img)" alt="patch">
+          <img class="bg-cover brightness-[.3] z-10" :src="getImageUrl(award.background, 'jpeg')" alt="patch">
         </div>
         <div>
           <h2 class="absolute top-[42%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl font-bold">{{ award.player }}</h2>
