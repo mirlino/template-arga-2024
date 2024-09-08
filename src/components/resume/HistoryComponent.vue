@@ -1,6 +1,5 @@
 <script lang="ts" setup>
   import type { History } from '@/interfaces/HistoryResume.interface';
-  import { toRefs } from 'vue';
   const props = defineProps<History>();
 
   
