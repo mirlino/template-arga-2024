@@ -18,10 +18,6 @@
 
 <template>
   <div>
-    <!--Width Temporal-->
-    <div class="font-purista fixed z-40 right-0 top-28 bg-azul-arga-700 py-4 px-6">
-      <p class="text-white font-bold font-base">{{ width }}</p>
-    </div>
     
     <header-component 
       :width="width"
