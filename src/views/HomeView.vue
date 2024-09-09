@@ -5,7 +5,10 @@
   import EventComponent from '@/components/events/EventComponent.vue';
   import AwardComponent from '@/components/award/AwardComponent.vue';
   import AlliancesComponent from '@/components/alliances/AlliancesComponent.vue';
+  import { useWindowSize } from '@vueuse/core';
 
+  const { width } = useWindowSize();
+  
   const fotos = [
     
     {
@@ -195,18 +198,22 @@
       link: '#',
     },
   ];
+
+
   
 </script>
 
 <template>
   <div>
     <!--Slide-->
-    <section class="z-20">
+    <section 
+      v-show="width >= 565"
+      class="z-20"
+    >
       <the-slide 
         :slides="fotos"
       ></the-slide> 
     </section>
-    
     <section class="py-10 font-purista bg-[#181818]" >
       <!--Cards-->
       <card-component 
@@ -220,7 +227,7 @@
    
     <!--Eventos-->
     <section 
-      class="w-full bg-fixed flex flex-col justify-center items-center py-10 background-arma" 
+      class="flex flex-col items-center justify-center w-full py-10 bg-fixed background-arma" 
     
     >
       <event-component 
@@ -230,7 +237,7 @@
         :information="recentEvents"
 
       ></event-component> 
-      <router-link class="bg-azul-arga-500 text-white font-purista uppercase py-4 px-6 my-8 hover:scale-105 transition-transform" to="/">Ver mas Eventos</router-link>
+      <router-link class="px-6 py-4 my-8 text-white uppercase transition-transform bg-azul-arga-500 font-purista hover:scale-105" to="/">Ver mas Eventos</router-link>
     </section>
     
     <!--BLOG-->
@@ -241,12 +248,12 @@
         :has-logo="false"
         :information="recentNews"
       ></event-component> 
-      <router-link class="bg-azul-arga-500 text-white font-purista uppercase py-4 px-6 my-8 hover:scale-105 transition-transform" to="/">Ver mas Noticias</router-link>
+      <router-link class="px-6 py-4 my-8 text-white uppercase transition-transform bg-azul-arga-500 font-purista hover:scale-105" to="/">Ver mas Noticias</router-link>
     </section>
     
     <!--Condecoraciones-->
     <section
-      class="w-full bg-fixed flex flex-col justify-center items-center py-10 background-arma" 
+      class="flex flex-col items-center justify-center w-full py-10 bg-fixed background-arma" 
       
     >
       <award-component
@@ -254,7 +261,7 @@
       subtitle="Ultimas condecoraciones a Jugadores"
       :duty="recentAwards"
       ></award-component>
-      <router-link class="bg-azul-arga-500 text-white font-purista uppercase py-4 px-6 my-8 hover:scale-105 transition-transform" to="/">Ver mas Condecoraciones</router-link>
+      <router-link class="px-6 py-4 my-8 text-white uppercase transition-transform bg-azul-arga-500 font-purista hover:scale-105" to="/">Ver mas Condecoraciones</router-link>
     </section>
 
     <section class="py-10 font-purista bg-[#292828]">
