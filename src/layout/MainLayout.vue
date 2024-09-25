@@ -28,7 +28,6 @@
       :closed="openMenuTablet" 
       @open-menu-tablet="openMenu"
       @close-menu-tablet="closeMenu"
-      class="z-20" 
     />
     <aside-left-component
       :openMenu="openMenuTablet"

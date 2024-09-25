@@ -16,10 +16,10 @@
       <div 
           
         :class="[props.openMenu ? 'translate-x-0 transition-all' : '-translate-x-full transition-all']"
-        class="w-1/2 h-screen fixed z-10 bg-[#292828]"
+        class="w-1/2 h-screen fixed z-20 bg-[#292828]"
       >
         <nav 
-          class="flex flex-col mt-24 pl-4 z-30 font-purista"
+          class="flex flex-col mt-24 pl-4 z-40 font-purista"
         >
           <router-link 
             @click="closeMenu" 
@@ -50,7 +50,7 @@
       <div 
         v-if="props.openMenu"
         @click="closeMenu"
-        class="h-screen w-screen fixed right-0 z-[5] top-0 bg-[#292828] bg-opacity-70"
+        class="h-screen w-screen fixed right-0 z-[15] top-0 bg-[#292828] bg-opacity-70"
       >
   </div>
   </div>
