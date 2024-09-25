@@ -19,7 +19,6 @@
 
 <template>
   <div class="relative">
-    
     <!-- Social media -->
     <social-media />
     
