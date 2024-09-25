@@ -3,7 +3,7 @@
   import HeaderComponent from '@/components/header/HeaderComponent.vue';
   import FooterComponent from '@/components/footer/FooterComponent.vue';
   import AsideLeftComponent from '@/components/aside/AsideLeftComponent.vue';
-  import SocialMedia from '@/module/socialmedia/SocialMedia.vue';
+  import SocialMedia from '@/plugins/utils/socialmedia/SocialMedia.vue';
   import { useWindowSize } from '@vueuse/core';
 
   const openMenuTablet = ref<boolean>(false);

@@ -24,7 +24,7 @@
           <router-link 
             @click="closeMenu" 
             class="text-xl py-4 px-3 uppercase font-bold text-white hover:bg-amarillo-arga-500 transition-colors" 
-            to="/"
+            :to="{name:''}"
           >Historia</router-link>
           <router-link 
             @click="closeMenu" 

@@ -13,12 +13,12 @@
 <template>
   <div>
     <div class="flex flex-col items-center pb-12 font-purista text-white" >
-      <h2 class="text-4xl uppercase font-bold">{{ props.title }}</h2>
+      <h2 class="text-4xl text-center uppercase font-bold">{{ props.title }}</h2>
       <p>{{ props.subtitle }}</p>
     </div>
     <div class="flex flex-row flex-wrap gap-4 items-center justify-center">
       <article 
-        class="w-[30rem] flex justify-center relative ring-2 ring-azul-arga-500 font-purista text-white hover:-translate-y-2 transition-transform"  
+        class="max-w-[30rem] flex justify-center relative ring-2 ring-azul-arga-500 font-purista text-white hover:-translate-y-2 transition-transform"  
         v-for="(award, index) in props.duty" :key="index"
       >
         <div class="">
