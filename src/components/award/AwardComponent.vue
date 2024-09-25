@@ -18,7 +18,7 @@
     </div>
     <div class="flex flex-row flex-wrap gap-4 items-center justify-center">
       <article 
-        class="max-w-[30rem] flex justify-center relative ring-2 ring-azul-arga-500 font-purista text-white hover:-translate-y-2 transition-transform"  
+        class="w-full md:max-w-[30rem] flex justify-center relative ring-2 ring-azul-arga-500 font-purista text-white hover:-translate-y-2 transition-transform"  
         v-for="(award, index) in props.duty" :key="index"
       >
         <div class="">
