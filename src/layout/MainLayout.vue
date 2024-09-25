@@ -3,6 +3,7 @@
   import HeaderComponent from '@/components/header/HeaderComponent.vue';
   import FooterComponent from '@/components/footer/FooterComponent.vue';
   import AsideLeftComponent from '@/components/aside/AsideLeftComponent.vue';
+  import SocialMedia from '@/module/socialmedia/SocialMedia.vue';
   import { useWindowSize } from '@vueuse/core';
 
   const openMenuTablet = ref<boolean>(false);
@@ -17,7 +18,10 @@
 </script>
 
 <template>
-  <div>
+  <div class="relative">
+    
+    <!-- Social media -->
+    <social-media />
     
     <header-component 
       :width="width"
