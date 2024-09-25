@@ -15,12 +15,12 @@
 <template>
   <div class="py-10 font-purista text-white">
     <div class="flex flex-col items-center pb-12" >
-      <h2 class="text-4xl uppercase font-bold">{{ props.title }}</h2>
+      <h2 class="text-4xl uppercase text-center font-bold">{{ props.title }}</h2>
       <p>{{ props.subTitle }}</p>
     </div>
     <!--:style="'background-image:url('+`../src/assets/img/${event.img}`+');'"-->
     <div class="flex flex-row flex-wrap gap-4 items-center justify-center">
-      <div class="relative w-[30rem] hover:-translate-y-2 transition-transform"  v-for="(event, index) in props.information" :key="index">
+      <div class="relative max-w-[30rem] hover:-translate-y-2 transition-transform"  v-for="(event, index) in props.information" :key="index">
         <img class="bg-cover brightness-50 z-10" :src="getImageUrl(event.img)" :alt="`${event.title}`">
         <span class="absolute uppercase top-0 left-0 bg-azul-arga-600 py-4 px-6">{{ event.date }}</span>
         <div class="absolute flex flex-row justify-center items-center gap-8 top-[25%] px-4 left-[10%]">
