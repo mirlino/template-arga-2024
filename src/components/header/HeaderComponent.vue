@@ -55,18 +55,20 @@
     >
       <div>
         <router-link :to="{path: '/'}">
-          <img class="w-[6rem]" src="../../assets/img/logo.png" alt="ArgA">
+          <img class="w-[6rem] cursor-pointer" src="../../assets/img/logo.png" alt="ArgA">
         </router-link>
       </div>
-      <div class="absolute left-10">
+      <div class="absolute left-5">
         <icon-menu
           v-if="!isOpen" 
           @click="openMenu"
+          class="cursor-pointer"
           size="28px" color="#fff"
         />
         <icon-close-menu
           v-if="isOpen" 
           @click="closeMenu"
+          class="cursor-pointer"
           size="28px" color="#fff"
         />
       </div>
