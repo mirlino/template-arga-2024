@@ -37,7 +37,7 @@
       </div>
     </footer>
     <div class="w-full flex items-center justify-center bg-azul-arga-900">
-      <h4 class="font-purista text-center text-white py-4">&copy; Copyright Clan ArgA 2024 | Design by Mirlino Marine</h4>
+      <h4 class="font-purista text-center text-sm md:text-base text-white py-4">&copy; Copyright Clan ArgA 2024 | Design by Mirlino Marine</h4>
     </div>
   </div>
 </template>
