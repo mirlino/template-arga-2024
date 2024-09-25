@@ -29,7 +29,7 @@
   <div class="relative">
     <header 
       v-if="props.width > 724"
-      class="w-full h-16 flex justify-between items-center px-16 bg-azul-arga-600"
+      class="w-full z-50 flex justify-between items-center px-16 bg-azul-arga-600"
     >
       <div>
         <router-link :to="{path: '/'}">

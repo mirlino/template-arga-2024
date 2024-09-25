@@ -45,10 +45,10 @@
         >
           <swiper-slide v-for="(foto, index) in props.slides" :key="index">
             <img class="relative brightness-50" :src="getImageUrl(foto.img)" alt="">
-            <div class="font-purista w-1/2 absolute flex flex-col gap-4 px-4 py-4 top-1/3 left-28 backdrop-blur-md rounded-lg">
-              <h2 class="font-bold text-5xl text-white">{{ foto.titulo.length > 30 ? `${foto.titulo.slice(0,30)}...` : foto.titulo }}</h2>
-              <p class="text-white text-xl font-light">{{ foto.description.length > 200 ? `${foto.description.slice(0,200)}...` : foto.description }}</p>
-              <a class="z-[40] w-40 text-center py-4 px-6 text-white text-xl ring-1 ring-amarillo-arga-500 hover:bg-amarillo-arga-500 hover:ring-0 transition-colors" :href="`${foto.link}`">Leer más...</a>
+            <div class="font-purista w-1/2 absolute flex flex-col gap-4 px-1 lg:px-4 py-4 top-1/4 lg:top-1/3 left-28 backdrop-blur-md rounded-lg">
+              <h2 class="font-bold text-3xl md:text-5xl text-white">{{ foto.titulo.length > 30 ? `${foto.titulo.slice(0,30)}...` : foto.titulo }}</h2>
+              <p class="text-white text-sm md:text-xl font-light">{{ foto.description.length > 200 ? `${foto.description.slice(0,200)}...` : foto.description }}</p>
+              <a class="z-[40] w-40 text-center py-2 px-4 lg:py-4 lg:px-6 text-white text-base lg:text-xl ring-1 ring-amarillo-arga-500 hover:bg-amarillo-arga-500 hover:ring-0 transition-colors" :href="`${foto.link}`">Leer más...</a>
             </div>
           </swiper-slide>
         </swiper>
