@@ -41,7 +41,7 @@
       >
         <router-link 
           class="text-xl py-4 px-3 uppercase font-bold text-white hover:bg-amarillo-arga-500 transition-colors" 
-          :to="{name:''}"
+          :to="{name:'nosotros'}"
         >Historia</router-link>
         <router-link class="text-xl py-4 px-3 uppercase font-bold text-white hover:bg-amarillo-arga-500 transition-colors" to="/">Miembros</router-link>
         <router-link class="text-xl py-4 px-3 uppercase font-bold text-white hover:bg-amarillo-arga-500 transition-colors" to="/">Eventos</router-link>
