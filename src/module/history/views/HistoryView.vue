@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div>
+  <div >
     <hero-section />
   </div>
 </template>

@@ -10,7 +10,6 @@
   const { width } = useWindowSize();
   
   const fotos = [
-    
     {
       img: 'fondoDos',
       titulo: 'Titulo 2',
