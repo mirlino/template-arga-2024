@@ -1,7 +1,7 @@
 <script lang="ts" setup>
   import { ref } from 'vue';
 
-  const bgHero = import.meta.env.VITE_APP_BASE_PATH + 'src/assets/img/nosotros.png';
+  const bgHero = import.meta.url + 'src/assets/img/nosotros.png';
   
   function getImageUrl(name: string, ext: string = 'png') {
     if(ext === 'png') return new URL(`../../../../assets/img/${name}.png`, import.meta.url).href;
@@ -12,7 +12,7 @@
 
 <template>
   <div>
-    <div class="relative w-full pt-[60%] md:pt-[35%] bg-fixed bg-bottom bg-auto lg:bg-center md:bg-cover bg-no-repeat bg-opacity-10" :style="'background-image:url('+bgHero+');'">
+    <div class="relative w-full pt-[60%] md:pt-[35%] bg-fixed bg-bottom bg-auto lg:bg-center md:bg-cover bg-no-repeat bg-opacity-10" :style="'background-image:url('+getImageUrl('nosotros')+');'">
       <div class="font-purista text-white absolute bottom-0 w-full backdrop-blur-md">
         <h2 class="text-4xl font-bold py-4 text-center md:text-left md:pl-4 uppercase"><span class="text-azul-arga-500">Cl</span>an ar<span class="text-azul-arga-500">ga</span></h2>
       </div>
