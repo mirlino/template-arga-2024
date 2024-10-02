@@ -5,6 +5,9 @@
   import AsideLeftComponent from '@/components/aside/AsideLeftComponent.vue';
   import SocialMedia from '@/plugins/utils/socialmedia/SocialMedia.vue';
   import { useWindowSize } from '@vueuse/core';
+  import { useRoute } from 'vue-router';
+
+  const route = useRoute();
 
   const openMenuTablet = ref<boolean>(false);
 
@@ -21,7 +24,9 @@
   <div class="relative">
     
     <!-- Social media -->
-    <social-media />
+     <div v-if="route.name === 'home'">
+       <social-media />
+     </div>
     
     <header-component 
       :width="width"
