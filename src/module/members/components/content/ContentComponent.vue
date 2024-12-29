@@ -18,7 +18,7 @@
       <img :src="getImageUrl('estrellaclass2')" alt="star">
     </div>
     <!--Accordion-->
-    <div>
+    <div class="w-full max-w-[70rem]">
       <the-accordion />
     </div>
   </div>
