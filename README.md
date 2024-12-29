@@ -17,6 +17,7 @@ Mejora de plantilla ArgA utilizando el framework de Vue 3, con mejor estructurac
 * [`Vue 3`](https://vuejs.org/ "Framework")
 * [`Tailwind CSS`](https://tailwindcss.com/ "Framework CSS")
 * [`Swiper`](https://swiperjs.com/ "Library")
+* [`NodeJS 18.18.0`](https://nodejs.org/ "Framework")
 
 
 ## Project Setup
