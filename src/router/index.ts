@@ -1,8 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import MainLayout from '@/layout/MainLayout.vue';
-import HomeView from '@/views/HomeView.vue';
-import HistoryView from '@/module/history/views/HistoryView.vue';
-import MembersView from '@/module/members/views/MembersView.vue';
+import HomeView from '@/pages/HomePage.vue';
+import HistoryView from '@/module/history/pages/HistoryPage.vue';
+import MembersView from '@/module/members/pages/MembersPage.vue';
+import HomeEvent from '@/module/events/pages/HomePage.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,6 +28,11 @@ const router = createRouter({
           path: 'miembros',
           name: 'members',
           component: MembersView
+        },
+        {
+          path: 'eventos',
+          name: 'events',
+          component: HomeEvent
         }
       ]
     },
