@@ -236,7 +236,7 @@
         :information="recentEvents"
 
       ></event-component> 
-      <router-link class="px-6 py-4 my-8 text-white uppercase transition-transform bg-azul-arga-500 font-purista hover:scale-105" to="/">Ver mas Eventos</router-link>
+      <router-link class="px-6 py-4 my-8 text-white uppercase transition-transform bg-azul-arga-500 font-purista hover:scale-105" :to="{name: 'events'}">Ver mas Eventos</router-link>
     </section>
     
     <!--BLOG-->

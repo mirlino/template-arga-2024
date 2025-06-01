@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-  import { ref } from 'vue';
+  import { ref, watch } from 'vue';
   import HeaderComponent from '@/components/header/HeaderComponent.vue';
   import FooterComponent from '@/components/footer/FooterComponent.vue';
   import AsideLeftComponent from '@/components/aside/AsideLeftComponent.vue';
@@ -18,6 +18,14 @@
   function closeMenu() {
     openMenuTablet.value = false;
   }
+
+  function scrollToTop(){
+    window.scrollTo(0,0);
+  }
+
+  watch(route, () => {
+    scrollToTop()
+  },{deep: true})
 </script>
 
 <template>

@@ -3,7 +3,7 @@ import MainLayout from '@/layout/MainLayout.vue';
 import HomeView from '@/pages/HomePage.vue';
 import HistoryView from '@/module/history/pages/HistoryPage.vue';
 import MembersView from '@/module/members/pages/MembersPage.vue';
-import HomeEvent from '@/module/events/pages/HomePage.vue';
+import HomeEventView from '@/module/events/pages/EventPage.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,9 +32,10 @@ const router = createRouter({
         {
           path: 'eventos',
           name: 'events',
-          component: HomeEvent
+          component: HomeEventView
         }
-      ]
+      ],
+      
     },
   ]
 })
